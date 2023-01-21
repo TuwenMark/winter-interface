@@ -18,12 +18,12 @@ import java.util.Map;
 @RequestMapping("/name")
 public class NameController {
 
-	@GetMapping("/")
+	@GetMapping("/get")
 	public String getNameByGet( String name) {
 		return "Get 你的名字是：" + name;
 	}
 
-	@PostMapping("/")
+	@PostMapping("/post")
 	public String getNameByPost(@RequestParam String name) {
 		return "Post 你的名字是：" + name;
 	}
